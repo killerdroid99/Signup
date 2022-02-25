@@ -13,7 +13,7 @@
 	}
 
 	.side-ground {
-		height: 100vh;
+		min-height: 100vh;
 		max-width: 40%;
 		background: url(./images/side-image.jpg);
 		background-size: 100% 100vh;
@@ -24,7 +24,7 @@
 
 	.side-ground h1 {
 		color: gold;
-		font-size: max(2.5rem);
+		font-size: max(2rem);
 		height: 300px;
 		width: 100vh;
 		background-image: linear-gradient(#fd717188, #9198e57e);
@@ -37,7 +37,7 @@
 	.creator {
 		display: block;
 		position: absolute;
-		bottom: 5px;
+		bottom: 0;
 		color: white;
 	}
 
@@ -66,7 +66,7 @@
 
 	.form-content {
 		max-width: 50vw;
-		height: 500px;
+		min-height: 500px;
 		background-color: rgba(240, 248, 255, 0.384);
 		padding: 30px;
 		border-radius: 5px;
@@ -82,7 +82,7 @@
 	}
 
 	.form-content input {
-		height: 2rem;
+		max-height: 2rem;
 		border: none;
 		border-radius: 10px;
 		border: 3px solid gray;
@@ -92,7 +92,7 @@
 
 	label {
 		cursor: pointer;
-		font-size: 1.4rem;
+		font-size: 1.5vw;
 	}
 
 	.form-content input:focus {
@@ -103,14 +103,13 @@
 	button {
 		display: block;
 		height: 3rem;
-		position: absolute;
-		font-size: 1.3rem;
+		position: relative;
+		font-size: 1rem;
 		border-radius: 10px;
 		border: none;
 		transition: 0.5s;
 		background-size: 400%;
-		bottom: 80px;
-		width: 200px;
+		max-width: 200px;
 	}
 
 	button:hover {
@@ -196,6 +195,7 @@
 			rgba(255, 217, 0, 0.514)
 		);
 		min-width: 88vw;
+		min-height: 100vh;
 	}
 
 	.title-tag-line {
