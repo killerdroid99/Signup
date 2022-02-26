@@ -12,7 +12,7 @@ const submit = document.getElementById("btn");
 submit.addEventListener("click", () => {
 	if (!nameRex.test(fname.value) || !nameRex.test(lname.value)) {
 		alert("First name and Last name should include only alphabets!");
-	} else if (!phnRex.test(phnum.value)) {
+	} else if (!phnRex.test(phnum.value) && phnum.value.length > 0) {
 		alert("Invalid phone number!");
 	} else if (pwd.value !== conf.value) {
 		alert("Passwords don't match!");
